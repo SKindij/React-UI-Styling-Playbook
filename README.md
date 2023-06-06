@@ -1,7 +1,7 @@
 # React-UI-Styling-Playbook
 Guidance for styling UI elements using SCSS, React Bootstrap, and Material UI
 
-## 🌟 [React-Bootstrap]() 🌟
+## 🌟 [React-Bootstrap](https://github.com/SKindij/React-UI-Styling-Playbook/tree/main/React-Bootstrap) 🌟
   - provides user interface elements for web and mobile applications;
   - serves as a complete upgrade for React in general;
       * ``npm install react-bootstrap bootstrap``
@@ -12,16 +12,12 @@ Guidance for styling UI elements using SCSS, React Bootstrap, and Material UI
       * > ```javascript
         >    import { Button } from 'react-bootstrap';
         > ```
-      * > > ```javascript
-        > >  {/* following line can be included in your src/index.js or App.js file */}
-        > >    import 'bootstrap/dist/css/bootstrap.min.css';
-        > > ```
   - has an extensive list of components, each with full control over its behavior;
       * > web: https://react-bootstrap.github.io/
 
 - - -
 
-## 🌟 [Material UI]() 🌟
+## 🌟 [Material UI](https://github.com/SKindij/React-UI-Styling-Playbook/tree/main/Material-UI) 🌟
   - used in Google's Material Design;
   - is well-known for its faster and easier web development;
   - you can quickly create your own design system or start with Material Design;
