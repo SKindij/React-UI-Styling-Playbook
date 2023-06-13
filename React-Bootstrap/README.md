@@ -61,7 +61,11 @@ Breakpoints are customizable widths that determine how your responsive layout be
 * `<Col>` - _auto-layout - component will render equal width columns_
   - > _In general, the width of the container is divided into 12 equal parts._\
       _The value set for a column indicates how many columns it will occupy in the container._\
-      _For example, `<Col xs={6}>` means that this column will occupy half width of container (ie 6 columns out of 12)._
+  - > _For example,_ `<Col xs={12} md={9} xl={6} className='custom-row'>content: xs=12 md=8 xl=4</Col>`\
+      &emsp;1 (8.33%), &emsp;2 (16.66%), &emsp;3 (25.00%), &emsp;4 (33.33%),\
+      &emsp;5 (41.66%), &emsp;6 (50.00%), &emsp;7 (58.33%), &emsp;8 (66.66%),\
+      &emsp;9 (75.00%), &emsp;10 (83.33%), &emsp;11 (91.66%), &emsp;12 (100%)
+      
 
 
 
