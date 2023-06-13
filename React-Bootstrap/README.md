@@ -36,6 +36,7 @@
 Breakpoints are customizable widths that determine how your responsive layout behaves across device or viewport sizes in Bootstrap.
   * _Mobile first, responsive design is the goal._
   * _Use media queries to architect your CSS by breakpoint._
+  * _Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12._
 
 |      Breakpoint   | infix | Dimensions |     Devices      |
 |-------------------|-------|------------|------------------|
@@ -46,7 +47,18 @@ Breakpoints are customizable widths that determine how your responsive layout be
 |    Extra large    | xl	  |  ≥1200px   |  large desktops  |
 | Extra extra large | xxl   |	 ≥1400px   |  larger desktops |
 
-> &emsp;_Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12._
+>```sass
+>  // Example
+>  // Apply styles starting from medium devices and up to extra large devices
+>  @media (min-width: 768px) and (max-width: 1199.98px) { ... }
+>```
+
+### Grid system
+&emsp;Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. 
+
+
+
+
 
 
 
