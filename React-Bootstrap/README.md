@@ -54,10 +54,10 @@ Breakpoints are customizable widths that determine how your responsive layout be
 >```
 
 ### Grid system
-&emsp;Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. 
-
-
-
+&emsp;It uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. 
+* `<Container>` - _provides a means to center and horizontally pad your site’s contents_
+* `<Container fluid />` - _for width: 100% across all viewport and device sizes_
+> &emsp;_Setting breakpoint (sm, md, lg, xl, xxl) for fluid prop will set Container as fluid until specified breakpoint._
 
 
 
