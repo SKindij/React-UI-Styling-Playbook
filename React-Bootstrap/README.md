@@ -33,17 +33,20 @@
 - - -
 
 ### Available default breakpoints
+Breakpoints are customizable widths that determine how your responsive layout behaves across device or viewport sizes in Bootstrap.
+  * _Mobile first, responsive design is the goal._
+  * _Use media queries to architect your CSS by breakpoint._
 
-| Breakpoint | Class infix | Dimensions |
-|------------|-------------|------------|
-|  X-Small   |		None		 |	<576px 		|
-|  Small     |		 sm			 |	≥576px	 |
-|  Medium    |			md		 |	≥768px	 |
-|  Large     | 	  	lg		 |	≥992px	 |
-|  Extra     | large	xl	 | 	≥1200px	 |
-|  Extra     | extra large	xxl |	≥1400px |
+|      Breakpoint   | infix | Dimensions |     Devices      |
+|-------------------|-------|------------|------------------|
+|     X-Small       |	None	|	 <576px  	 |  portrait phones |
+|      Small        |	sm	  |  ≥576px	   | landscape phones |
+|      Medium       |	md	  |	 ≥768px	   |      tablets     |
+|      Large        | lg		|	 ≥992px	   |      desktops    |
+|    Extra large    | xl	  |  ≥1200px   |  large desktops  |
+| Extra extra large | xxl   |	 ≥1400px   |  larger desktops |
 
-
+> &emsp;_Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12._
 
 
 
