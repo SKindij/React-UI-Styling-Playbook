@@ -59,7 +59,9 @@ Breakpoints are customizable widths that determine how your responsive layout be
 * `<Container fluid />` - _for width: 100% across all viewport and device sizes_
   - > _Setting breakpoint (sm, md, lg, xl, xxl) for fluid prop will set Container as fluid until specified breakpoint._
 * `<Row>` - _helps organize columns horizontally and creates space between them_
-  - > **g-** - _horizontal intercolumnar space from 0 to 5_
+  - > _lets you specify column widths_
+  - > ``<Row xs={2} md={4} lg={6}>``
+  - > _Use **auto** to give columns their natural widths._
 * `<Col>` - _auto-layout - component will render equal width columns_
   - > _In general, the width of the container is divided into 12 equal parts._\
       _The value set for a column indicates how many columns it will occupy in the container._\
@@ -67,7 +69,17 @@ Breakpoints are customizable widths that determine how your responsive layout be
       &emsp;1 (8.33%), &emsp;2 (16.66%), &emsp;3 (25.00%), &emsp;4 (33.33%),\
       &emsp;5 (41.66%), &emsp;6 (50.00%), &emsp;7 (58.33%), &emsp;8 (66.66%),\
       &emsp;9 (75.00%), &emsp;10 (83.33%), &emsp;11 (91.66%), &emsp;12 (100%)
+  - > _For offsetting grid columns you can set an offset value or for a more general layout, use the margin class utilities._
       
+In general, you can place almost any content inside these components to create the desired layout and placement on the page.
+
+
+
+
+
+
+
+
 
 
 
