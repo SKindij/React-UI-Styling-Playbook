@@ -56,8 +56,7 @@ Breakpoints are customizable widths that determine how your responsive layout be
 ### Grid system
 &emsp;It uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive. 
 * `<Container>` - _provides a means to center and horizontally pad your site’s contents_
-* `<Container fluid />` - _for width: 100% across all viewport and device sizes_
-  - > _Setting breakpoint (sm, md, lg, xl, xxl) for fluid prop will set Container as fluid until specified breakpoint._
+  - > `<Container fluid />` - _for width: 100% across all viewport and device sizes_
 * `<Row>` - _helps organize columns horizontally and creates space between them_
   - > _lets you specify column widths_
   - > ``<Row xs={2} md={4} lg={6}>``
@@ -73,10 +72,15 @@ Breakpoints are customizable widths that determine how your responsive layout be
       
 In general, you can place almost any content inside these components to create the desired layout and placement on the page.
 
-
-
-
-
+### Stacks
+&emsp;This is a component that allows you to group and place multiple child components next to each other, placing them vertically. by default.
+* vertical items
+  - ``gap`` _property that sets the gap (distance) between child components in pixels_
+  - ``mx-auto`` _aligns the column horizontally (margin-left and margin-right)_
+* horizontal items
+  - ``<div className=".ms-auto"/>`` _adds a margin on the left side, thus shifting the element to the right_
+  - ``<div className="vr"/>`` _draws a vertical stick between elements_
+* inline form
 
 
 
