@@ -101,11 +101,20 @@ In general, you can place almost any content inside these components to create t
 * ``<Form.Text>`` is used to display additional text or a message that explains or provides context to form elements.
   - _For example, you can use it to provide input validation hints or warnings._
 
-### Select
+#### Select
+&emsp;You may choose from small and large custom selects to match our similarly sized text inputs.
 
-
-
-
+#### Checks and radios
+&emsp;By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with FormCheck.
+* Default (stacked)
+* Switches
+  - > _it has markup of custom checkbox but uses type="switch" to render a toggle switch.\
+    > Switches also support the same customizable children as `<FormCheck>`_
+* Inline - _group checkboxes or radios on the same horizontal row_
+* Reverse - _put your checkboxes, radios, and switches on the opposite side_
+* Without labels
+  - > _Remember to add an aria-label when omitting labels!_
+* Customizing FormCheck
 
 
 
