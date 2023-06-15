@@ -91,6 +91,10 @@ In general, you can place almost any content inside these components to create t
 * ``<Form.Control>`` is used to create various input fields in a form.
   - _It can include text boxes, dropdown lists, radio buttons, date pickers, etc._
   - _It provides various properties that allow you to customize the appearance and functionality of the controls._
+  - _It adds some additional styles for general appearance, focus state, sizing, and more._
+    + sizing: ``<Form.Control size="lg|...|sm" type="text" placeholder="Large text" />``
+    + ``disabled`` - _to give grayed out appearance and remove pointer events;_
+    + ``readOnly`` - _to prevent modification of the input's value, but retain the standard cursor;_
 * ``<Form.Text>`` is used to display additional text or a message that explains or provides context to form elements.
   - _For example, you can use it to provide input validation hints or warnings._
 
