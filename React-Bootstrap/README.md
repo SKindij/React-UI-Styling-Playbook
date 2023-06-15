@@ -95,10 +95,13 @@ In general, you can place almost any content inside these components to create t
     + sizing: ``<Form.Control size="lg|...|sm" type="text" placeholder="Large text" />``
     + ``disabled`` - _to give grayed out appearance and remove pointer events;_
     + ``readOnly`` - _to prevent modification of the input's value, but retain the standard cursor;_
+    + ``plaintext`` - _to remove the default form field styling and preserve the correct margin and padding;_
+    + ``<Form.Control type="file" />``
+    + ``<Form.Control type="color" id="colorInput" defaultValue="#563d7c" title="Choose your color" />``
 * ``<Form.Text>`` is used to display additional text or a message that explains or provides context to form elements.
   - _For example, you can use it to provide input validation hints or warnings._
 
-
+### Select
 
 
 
