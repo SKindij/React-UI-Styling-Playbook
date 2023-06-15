@@ -116,7 +116,15 @@ In general, you can place almost any content inside these components to create t
   - > _Remember to add an aria-label when omitting labels!_
 * Customizing FormCheck
 
+- - -
 
+### Layout
+&emsp;When working with the Bootstrap grid system, be sure to place form elements within column classes.\
+&emsp;Since Bootstrap applies display: block and width: 100% to almost all our form controls, forms will by default stack vertically. Additional classes can be used to vary this layout on a per-form basis.
+
+&emsp;More complex forms can be built using the grid components. Use these for form layouts that require multiple columns, varied widths, and additional alignment options.
+
+### Validation
 
 
 
