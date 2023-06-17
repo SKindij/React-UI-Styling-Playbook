@@ -128,3 +128,23 @@ In general, you can place almost any content inside these components to create t
 
 
 
+
+- - -
+
+### Navbars
+&emsp;A powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more.
+* _Use the **expand** prop to allow for collapsing the Navbar at lower breakpoints._
+* _Navbars and their contents are **fluid by default**. Use optional **containers to limit** their horizontal width._
+* _Use spacing and flex utilities to size and position content._
+* _Images are supported but will likely require custom styling to work well._
+
+> &emsp;While not required, you can wrap the Navbar in a <Container> component to center it on a page, or add one within to only center the contents of a fixed or static top navbar.\
+> &emsp;Use the expand prop as well as the Navbar.Toggle and Navbar.Collapse components to control when content collapses behind a button.
+
+
+
+
+
+
+
+
