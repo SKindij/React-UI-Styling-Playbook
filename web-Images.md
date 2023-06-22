@@ -44,7 +44,9 @@ and then specify which version to use in your HTML or CSS using media queries, v
   + consider using a Content Delivery Network (CDN) to faster deliver your images to users across different geographical regions;
   + CDNs store copies of your images in multiple locations worldwide.
 
-
+> _&emsp;When working with responsive images, it's generally recommended to provide multiple versions of the same image at different sizes.
+> This approach helps ensure that the most appropriate image is served based on the user's device capabilities and screen size._\
+> _&emsp;By providing multiple versions, you can optimize loading speed and bandwidth usage for different devices. Smaller devices with lower-resolution screens can benefit from smaller images, while larger devices with higher-resolution screens can receive higher-quality images._
 
 
 
