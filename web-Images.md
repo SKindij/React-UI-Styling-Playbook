@@ -48,6 +48,24 @@ and then specify which version to use in your HTML or CSS using media queries, v
 > This approach helps ensure that the most appropriate image is served based on the user's device capabilities and screen size._\
 > _&emsp;By providing multiple versions, you can optimize loading speed and bandwidth usage for different devices. Smaller devices with lower-resolution screens can benefit from smaller images, while larger devices with higher-resolution screens can receive higher-quality images._
 
+<p align="center">
+  <img src="https://github.com/SKindij/SKindij/blob/main/recources/srcset-sizes.png" 
+    title="srcset-sizes" alt="srcset and sizes" width="600" height="400"/>  
+</p> 
+
++ **src:**
+  - This is an attribute that specifies the path to an image.
+  -  It is the primary image that will be used if none of the alternative versions match the screen size.
++ **srcSet:**
+  - This is an attribute that contains a list of alternative images along with their sizes.
+  -  This means that the browser can choose the appropriate version of the image based on the viewport size to ensure optimal loading and display.
++ **sizes:**
+  - This is an attribute that specifies the sizes of the image for different screen sizes.
+
+
+
+
+
 
 
 
