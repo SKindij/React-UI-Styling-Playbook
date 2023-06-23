@@ -44,6 +44,9 @@ and then specify which version to use in your HTML or CSS using media queries, v
   + consider using a Content Delivery Network (CDN) to faster deliver your images to users across different geographical regions;
   + CDNs store copies of your images in multiple locations worldwide.
 
+- - -
+
+> _&emsp;HTML makes it possible to load different images depending on different conditions. A common situation: different pictures for different screen widths._
 > _&emsp;When working with responsive images, it's generally recommended to provide multiple versions of the same image at different sizes.
 > This approach helps ensure that the most appropriate image is served based on the user's device capabilities and screen size._\
 > _&emsp;By providing multiple versions, you can optimize loading speed and bandwidth usage for different devices. Smaller devices with lower-resolution screens can benefit from smaller images, while larger devices with higher-resolution screens can receive higher-quality images._
@@ -58,14 +61,36 @@ and then specify which version to use in your HTML or CSS using media queries, v
   -  It is the primary image that will be used if none of the alternative versions match the screen size.
 + **srcSet:**
   - This is an attribute that contains a list of alternative images along with their sizes.
-  -  This means that the browser can choose the appropriate version of the image based on the viewport size to ensure optimal loading and display.
-+ **sizes:**
+  - This means that the browser can choose the appropriate version of the image based on the viewport size to ensure optimal loading and display.
+ + **sizes:**
   - This is an attribute that specifies the sizes of the image for different screen sizes.
+  - The block width for an image can be specified in any unit of measurement, except for percentages.
 
+> ```HTML
+>  <Card.Img variant="top" 
+>    src={garageRolles}
+>    srcSet={`
+>         ${garageRollets334} 334w, 
+>         ${garageRollets668} 668w, 
+>         ${garageRollets916} 916w, 
+>         ${garageRollets1068} 1068w`}
+>     sizes="
+>         100vw, 
+>         (max-width:767px) 334px, 
+>         (max-width:991px) 668px, 
+>         (max-width:1399px) 916px",
+>         1068px"
+>         className="img-fluid img-thumbnail" 
+>         alt="roller gate"
+>  />  
+> ```
 
-
-
-
+How the browser reads these attributes:
+1. Looks at the device's screen width.
+2. Attempts to determine the appropriate condition from the list in the sizes attribute.
+3. Look at the block size for the image to this media expression.
+4. Loads that image from the list in srcset, which has the same size as the selected slot.
+5. If there is none, then first image that is larger than size of the selected slot will be loaded.
 
 
 
