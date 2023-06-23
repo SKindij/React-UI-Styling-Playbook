@@ -100,14 +100,24 @@ If your image is in a container, you can use CSS to resize the image to the widt
 >  }
 > ```
 
-- - -
-
 &emsp;Use image optimization tools to reduce their size without losing quality, such as [TinyPNG](https://tinypng.com/).
 
 There are several online tools that allow you to resize images and generate multiple versions with different widths:
 + [ResizeImage.net](https://resizeimage.net/)
 + [Simple Image Resizer](https://www.simpleimageresizer.com/)
 + [Bulk Resize Photos](https://bulkresizephotos.com/ru)
+
+
+- - -
+
+## Lazy loading
+&emsp;It can be useful when you have large or numerous assets (such as images) that you want to load on-demand, improving the initial page load performance.
+
+&emsp;When you're importing the images directly into your component, they will be bundled and loaded together with the component. If the size or number of images is not significant and doesn't impact the initial load time of your page, lazy loading may not be necessary.
+
+&emsp;However, if your images are large or there are many of them, and you want to improve the initial load performance, you could consider using lazy loading techniques. React provides a built-in feature called **React.lazy**, which allows you to lazily load components. Although it's typically used for code splitting, it can also be used for lazy loading images.
+
+
 
 
 
