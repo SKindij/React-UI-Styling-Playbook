@@ -75,7 +75,6 @@ and then specify which version to use in your HTML or CSS using media queries, v
 >         ${garageRollets916} 916w, 
 >         ${garageRollets1068} 1068w`}
 >     sizes="
->         100vw, 
 >         (max-width:767px) 334px, 
 >         (max-width:991px) 668px, 
 >         (max-width:1399px) 916px",
@@ -91,6 +90,26 @@ How the browser reads these attributes:
 3. Look at the block size for the image to this media expression.
 4. Loads that image from the list in srcset, which has the same size as the selected slot.
 5. If there is none, then first image that is larger than size of the selected slot will be loaded.
+
+
+If your image is in a container, you can use CSS to resize the image to the width of that container.
+> ```CSS
+>  img {
+>    height: auto;
+>    width: 100%;
+>  }
+> ```
+
+- - -
+
+&emsp;Use image optimization tools to reduce their size without losing quality, such as [TinyPNG](https://tinypng.com/).
+
+
+
+
+
+
+
 
 
 
