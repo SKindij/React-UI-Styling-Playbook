@@ -104,8 +104,10 @@ If your image is in a container, you can use CSS to resize the image to the widt
 
 &emsp;Use image optimization tools to reduce their size without losing quality, such as [TinyPNG](https://tinypng.com/).
 
-
-
+There are several online tools that allow you to resize images and generate multiple versions with different widths:
++ [ResizeImage.net](https://resizeimage.net/)
++ [Simple Image Resizer](https://www.simpleimageresizer.com/)
++ [Bulk Resize Photos](https://bulkresizephotos.com/ru)
 
 
 
