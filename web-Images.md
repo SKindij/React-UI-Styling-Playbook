@@ -119,11 +119,11 @@ There are several online tools that allow you to resize images and generate mult
 
 
 
+- - -
 
+### React Icons
+&emsp;Include popular [icons](https://react-icons.github.io/react-icons) in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the icons that your project is using.
 
-
-
-
-
+``npm install react-icons --save``
 
 
