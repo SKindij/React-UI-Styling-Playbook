@@ -29,3 +29,37 @@ Guidance for styling UI elements using SCSS, React Bootstrap, and Material UI
 
 - - -
 
+## Lighthouse features
+
+
+
+### React Helmet
+This reusable React component will manage all of your changes to the document head.
+[Helmet](https://github.com/nfl/react-helmet) takes plain HTML tags and outputs plain HTML tags. It's dead simple, and React beginner friendly.
++ Supports all valid head tags: title, base, meta, link, script, noscript, and style tags.
++ upports attributes for body, html and title tags.
++ + Supports server-side rendering.
+
+
+### Robots Exclusion Protocol
+You can put a [robots.txt](https://www.robotstxt.org/robotstxt.html) file in the directory dedicated to your domain.
+> ```text
+>  # To allow all robots complete access
+>  User-agent: *
+>  Disallow:
+> ```
+
+
+
+
+
+### WAVE 
+[Web Accessibility Evaluation Tools](https://wave.webaim.org/)
+> _WAVE® is a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, but also facilitates human evaluation of web content. Our philosophy is to focus on issues that we know impact end users, facilitate human evaluation, and to educate about web accessibility._
+
+
+
+### W3C
+[Markup Validation Service](https://validator.w3.org/)
+This validator checks the markup validity of Web documents in HTML, XHTML, SMIL, MathML, etc. If you wish to validate specific content such as RSS/Atom feeds or CSS stylesheets, MobileOK content, or to find broken links, there are other validators and tools available. As an alternative you can also try our non-DTD-based validator.
+
