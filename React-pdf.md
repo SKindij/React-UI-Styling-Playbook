@@ -1,6 +1,4 @@
-# [React-PDF](https://react-pdf.org/)
-
-
+## [React-PDF](https://react-pdf.org/)
 
 
 ``` javascript
@@ -15,3 +13,7 @@
 ```
 
 
+## [pdfmake](http://pdfmake.org/index.html#/)
+
+Client/server side PDF printing in pure JavaScript\
+``npm install pdfmake``
