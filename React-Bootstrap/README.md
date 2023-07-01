@@ -141,10 +141,25 @@ In general, you can place almost any content inside these components to create t
 > &emsp;While not required, you can wrap the Navbar in a <Container> component to center it on a page, or add one within to only center the contents of a fixed or static top navbar.\
 > &emsp;Use the expand prop as well as the Navbar.Toggle and Navbar.Collapse components to control when content collapses behind a button.
 
+- - -
+
+#### The most used classes
+
+```javascript
+  <div className="mb-3  ">
+    <element className="font-weight-bold " >
+
+    
+  </div>
+
+  <Container>
+   <Row xs={1} md={2} className="g-4 justify-content-center">
 
 
+    </Row>
+  </Container>
 
-
+```
 
 
 
