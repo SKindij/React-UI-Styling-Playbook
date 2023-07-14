@@ -35,8 +35,9 @@ export default function SignIn() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
       console.log({
-        email: data.get('email'),
-        password: data.get('password'),
+		elem: 'Sign In',
+        email: data.get('emailIn'),
+        password: data.get('passwordIn'),
       });
   };
 
@@ -61,14 +62,14 @@ export default function SignIn() {
             <TextField
               margin="normal" fullWidth
               required             
-              id="email" name="email" label="Email Address" 
+              id="emailIn" name="emailIn" label="Email Address" 
               autoComplete="email"
             />
             <TextField
               margin="normal" fullWidth
               required                        
               type="password"
-              id="password" name="password" label="Password"
+              id="passwordIn" name="passwordIn" label="Password"
               autoComplete="current-password"
             />
             <FormControlLabel
