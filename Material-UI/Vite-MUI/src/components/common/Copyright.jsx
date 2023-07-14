@@ -7,8 +7,9 @@ export default function Copyright() {
     <Typography variant="body2" color="text.secondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="#">
-        Website v.0.0.1 by SKindij
+        Website
       </Link>{' '}
+      {'v.0.0.1 by SKindij '}
       {new Date().getFullYear()}.
     </Typography>
   );
