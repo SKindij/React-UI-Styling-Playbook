@@ -3,8 +3,8 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-import ProTip from '.components/common/ProTip';
-import Copyright from '.components/common/Copyright';
+import ProTip from './components/common/ProTip';
+import Copyright from './components/common/Copyright';
 
 export default function App() {
   return (
