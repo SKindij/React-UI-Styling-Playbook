@@ -72,7 +72,7 @@ It contains foundational React UI component libraries for shipping new features 
 ### [Learning resources](https://mui.com/material-ui/getting-started/learn/)
 > _List of some of the best third-party resources for learning how to build beautiful apps with our components._
 
-* [MUI5 (Material UI) Crash Course](https://www.youtube.com/watch?v=o1chMISeTC0) video by Laith Academy:
+* [MUI5 (Material UI) Crash Course](https://www.youtube.com/playlist?list=PLQg6GaokU5CyVrmVsYa9R3g1z2Tsmfpm-) video by Laith Academy:
   - _everything you need to know to start building with the latest version of Material UI;_
 * [React + Material UI - From Zero to Hero](https://www.youtube.com/playlist?list=PLDxCaNaYIuUlG5ZqoQzFE27CUOoQvOqnQ) video series by The Atypical Developer:
   - _build along with this in-depth series, from basic installation through advanced component implementation;_
