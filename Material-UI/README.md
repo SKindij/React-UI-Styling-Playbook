@@ -118,7 +118,7 @@ It contains foundational React UI component libraries for shipping new features 
 
     // All system properties and any other CSS rules are available via the sx prop
     <Box sx={{ 
-        width: 700, height: 100,
+        width: 250, height: 100,
         backgroundColor: 'primary.main',
         '&:hover': {
           backgroundColor: 'primary.main',
@@ -126,7 +126,7 @@ It contains foundational React UI component libraries for shipping new features 
         },
         my: 4, 
         }}>       
-          MUI Box backgroundColor: primary.main          
+          MUI Box           
       </Box>
 ```
 
@@ -152,6 +152,19 @@ It contains foundational React UI component libraries for shipping new features 
 + Components may have multiple widths defined, causing the layout to change at the defined breakpoint. 
 + Width values given to larger breakpoints override those given to smaller breakpoints.
 + The rowSpacing and columnSpacing props allow for specifying the row and column gaps independently.
+
+
+### Stack
+> _It is a container component for arranging elements vertically or horizontally._\
+> _Stack is ideal for one-dimensional layouts, while Grid is preferable when you need both vertical and horizontal arrangement._
+
+
+
+
+
+
+
+
 
 
 
