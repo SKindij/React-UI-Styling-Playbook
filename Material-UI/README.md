@@ -116,15 +116,23 @@ It contains foundational React UI component libraries for shipping new features 
     // or
   import { Box } from '@mui/material';
 
-    // All system properties and any other CSS rules are available via the **sx** prop.
-
-
-
-
+    // All system properties and any other CSS rules are available via the sx prop
+    <Box sx={{ 
+        width: 700, height: 100,
+        backgroundColor: 'primary.main',
+        '&:hover': {
+          backgroundColor: 'primary.main',
+          opacity: [0.9, 0.8, 0.7],
+        },
+        my: 4, 
+        }}>       
+          MUI Box backgroundColor: primary.main          
+      </Box>
 ```
 
-
-
+### [Properties reference table](https://mui.com/system/properties/)
+> _Note that this table only lists custom properties._\
+> _All other regular CSS properties and selectors are supported too._
 
 
 
