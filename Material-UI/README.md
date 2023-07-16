@@ -85,6 +85,35 @@ It contains foundational React UI component libraries for shipping new features 
 * [Clever Dev](https://www.youtube.com/channel/UCb6AZy0_D1y661PMZck3jOw) and [Smart Devpreneur](https://smartdevpreneur.com/category/javascript/material-ui/) by Jon M:
   - _dozens of high-quality videos and articles digging deep into the nuts and bolts of Material UI._
 
+- - -
+
+## LAYOUT
+
+### Container
+>  _It's the most basic layout element._\
+>  _It centers your content horizontally._\
+>  _Most layouts do not require a nested container._
+
++ **Fluid**
+  - _container width is bounded by the maxWidth prop value_
+  - ```jsx
+      <Container maxWidth="xs">
+      // or: 'sm' | 'md' | 'lg' | 'xl' | false | string
+    ```
++ **Fixed**
+  - _The max-width matches the min-width of the current breakpoint._
+  - ```jsx
+      <Container fixed>
+    ```
+
+### Box
+>  _It serves as a wrapper component for most of the CSS utility needs._\
+>  _It packages all the style functions that are exposed in @mui/system._
+
++ All system properties and any other CSS rules are available via the **sx** prop.
+
+
+
 
 
 
