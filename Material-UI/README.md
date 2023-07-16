@@ -94,26 +94,34 @@ It contains foundational React UI component libraries for shipping new features 
 >  _It centers your content horizontally._\
 >  _Most layouts do not require a nested container._
 
-+ **Fluid**
-  - _container width is bounded by the maxWidth prop value_
-  - ```jsx
+```jsx
+  import Container from '@mui/material/Container';
+    // or
+  import { Container } from '@mui/material';
+
+    // Fluid - container width is bounded by the maxWidth prop value
       <Container maxWidth="xs">
-      // or: 'sm' | 'md' | 'lg' | 'xl' | false | string
-    ```
-+ **Fixed**
-  - _The max-width matches the min-width of the current breakpoint._
-  - ```jsx
+        // or: 'sm' | 'md' | 'lg' | 'xl' | false | string
+
+    // Fixed - max-width matches the min-width of the current breakpoint
       <Container fixed>
-    ```
+```
 
 ### Box
 >  _It serves as a wrapper component for most of the CSS utility needs._\
 >  _It packages all the style functions that are exposed in @mui/system._
 
-+ All system properties and any other CSS rules are available via the **sx** prop.
+```jsx
+  import Box from '@mui/material/Box';
+    // or
+  import { Box } from '@mui/material';
+
+    // All system properties and any other CSS rules are available via the **sx** prop.
 
 
 
+
+```
 
 
 
