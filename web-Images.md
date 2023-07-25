@@ -107,6 +107,10 @@ There are several online tools that allow you to resize images and generate mult
 + [Simple Image Resizer](https://www.simpleimageresizer.com/)
 + [Bulk Resize Photos](https://bulkresizephotos.com/ru)
 
+Online services for working with photos and pictures:
++ [Remove image background](https://www.remove.bg/ru)
+
+
 * 16 : 9
   - 320 х 180
   - 400 х 225
