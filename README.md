@@ -1,5 +1,25 @@
 # React-UI-Styling-Playbook
-Guidance for styling UI elements using SCSS, React Bootstrap, and Material UI
+Guidance for styling UI elements using Tailwind CSS, SCSS, React Bootstrap, and Material UI
+
+## 🌟 [Tailwind CSS with Next.js](https://github.com/SKindij/React-UI-Styling-Playbook/tree/main/TailwindCSS) 🌟
+
+### Setting up Tailwind CSS in a Next.js project.
+1. Create your project
+```go
+  npx create-next-app@latest price-pulse --typescript --eslint
+  cd price-pulse
+```
+2. Start your build process
+```go
+  npm run dev
+```
+
+The official **Tailwind CSS IntelliSense** extension for Visual Studio Code enhances the Tailwind development experience by providing users with advanced features such as autocomplete, syntax highlighting, and linting.
+
+
+
+
+
 
 ## 🌟 [React-Bootstrap](https://github.com/SKindij/React-UI-Styling-Playbook/tree/main/React-Bootstrap) 🌟
   - provides user interface elements for web and mobile applications;
