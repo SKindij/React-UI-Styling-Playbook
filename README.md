@@ -1,25 +1,5 @@
 # React-UI-Styling-Playbook
-Guidance for styling UI elements using Tailwind CSS, SCSS, React Bootstrap, and Material UI
-
-## 🌟 [Tailwind CSS with Next.js](https://github.com/SKindij/React-UI-Styling-Playbook/tree/main/TailwindCSS) 🌟
-
-### Setting up Tailwind CSS in a Next.js project.
-1. Create your project
-```go
-  npx create-next-app@latest price-pulse --typescript --eslint
-  cd price-pulse
-```
-2. Start your build process
-```go
-  npm run dev
-```
-
-The official **Tailwind CSS IntelliSense** extension for Visual Studio Code enhances the Tailwind development experience by providing users with advanced features such as autocomplete, syntax highlighting, and linting.
-
-
-
-
-
+Guidance for styling UI elements using React Bootstrap, and Material UI
 
 ## 🌟 [React-Bootstrap](https://github.com/SKindij/React-UI-Styling-Playbook/tree/main/React-Bootstrap) 🌟
   - provides user interface elements for web and mobile applications;
@@ -69,16 +49,25 @@ You can put a [robots.txt](https://www.robotstxt.org/robotstxt.html) file in the
 >  Disallow:
 > ```
 
-
-
-
-
 ### WAVE 
 [Web Accessibility Evaluation Tools](https://wave.webaim.org/)
 > _WAVE® is a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, but also facilitates human evaluation of web content. Our philosophy is to focus on issues that we know impact end users, facilitate human evaluation, and to educate about web accessibility._
 
 
+## 🌟 [Tailwind CSS with Next.js](https://github.com/SKindij/React-UI-Styling-Playbook/tree/main/TailwindCSS) 🌟
 
+### Setting up Tailwind CSS in a Next.js project.
+1. Create your project
+```go
+  npx create-next-app@latest price-pulse --typescript --eslint
+  cd price-pulse
+```
+2. Start your build process
+```go
+  npm run dev
+```
+
+The official **Tailwind CSS IntelliSense** extension for Visual Studio Code enhances the Tailwind development experience by providing users with advanced features such as autocomplete, syntax highlighting, and linting.
 ### W3C
 [Markup Validation Service](https://validator.w3.org/)
 This validator checks the markup validity of Web documents in HTML, XHTML, SMIL, MathML, etc. If you wish to validate specific content such as RSS/Atom feeds or CSS stylesheets, MobileOK content, or to find broken links, there are other validators and tools available. As an alternative you can also try our non-DTD-based validator.
