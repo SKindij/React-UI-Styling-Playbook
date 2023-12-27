@@ -70,7 +70,7 @@ It contains foundational React UI component libraries for shipping new features 
 
 > _Stack is ideal for one-dimensional layouts, while Grid is preferable when you need both vertical and horizontal arrangement._
 
-### Grid
+### 🧩 Grid
 > _Responsive layout grid adapts to screen size and orientation, ensuring consistency across layouts._\
 > _Material Design's responsive UI is based on a 12-column grid layout._
 
@@ -99,7 +99,10 @@ It contains foundational React UI component libraries for shipping new features 
   import Item from '@/views/Categories/Item';
 
    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
+      <Grid container
+        rowSpacing={{ xs: 1, sm: 2 }}
+        columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+      >
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <Item>
             Content occupy:
@@ -118,41 +121,72 @@ It contains foundational React UI component libraries for shipping new features 
     </Box>
 ```
 
-### Stack
+#### Grid container
+* direction=
+  + "row" | "column"
+* justifyContent=
+  + "center" | "space-around" | "space-between"
+* alignItems=
+  + "center" | "baseline" | "stretch"
+
+### 📚 Stack
 > _It is a container component for arranging elements vertically or horizontally._\
-> _Stack is ideal for one-dimensional layouts, while Grid is preferable when you need both vertical and horizontal arrangement._
 
+* docs: https://mui.com/material-ui/react-stack/
+  + acts as a generic container, wrapping around the elements to be arranged;
+* code: `import Stack from '@mui/material/Stack';`
 
+```jsx
+  import Item from '@/views/Categories/Item';
 
+   <Box sx={{ width: '100%' }}>
+      <Stack
+        direction={{ xs: 'column', sm: 'row' }}
+        spacing={{ xs: 1, sm: 2, md: 4 }}
+        alignItems="center"
+        justifyContent="space-around"
+        
+      >
+        <Item> Some content </Item>
+        <Item> Some content </Item>
+        <Item> Some content </Item>
+      </Stack>
+    </Box>
+```
 
-
-### Container
+### 🛢️ Container
 >  _It's the most basic layout element._\
 >  _It centers your content horizontally._\
 >  _Most layouts do not require a nested container._
 
-```jsx
-  import Container from '@mui/material/Container';
-    // or
-  import { Container } from '@mui/material';
+* docs: https://mui.com/material-ui/react-container/
+* code: `import Container from '@mui/material/Container';`
 
-    // Fluid - container width is bounded by the maxWidth prop value
-      <Container maxWidth="xs">
+```jsx
+    /* Fluid - container width is bounded by the maxWidth prop value
+        container will not expand beyond this width
+    */
+      <Container component="section"
+        maxWidth="xs" >
         // or: 'sm' | 'md' | 'lg' | 'xl' | false | string
 
     // Fixed - max-width matches the min-width of the current breakpoint
       <Container fixed>
 ```
 
-### Box
+> component= "main" | "div" | "article" | "nav"
+
+### 📦 Box
 >  _It serves as a wrapper component for most of the CSS utility needs._\
 >  _It packages all the style functions that are exposed in @mui/system._
 
-```jsx
-  import Box from '@mui/material/Box';
-    // or
-  import { Box } from '@mui/material';
+* docs: https://mui.com/system/react-box/
+  + generic container for grouping other components;
+  + as a `<div>` with special features 
+* code: `import Box from '@mui/material/Box';`
+* code: `import Box from '@mui/system/Box';`
 
+```jsx
     // All system properties and any other CSS rules are available via the sx prop
     <Box sx={{ 
         width: 250, height: 100,
@@ -172,6 +206,48 @@ It contains foundational React UI component libraries for shipping new features 
 > _All other regular CSS properties and selectors are supported too._
 
 - - -
+
+## NAVIGATION
+
+### App Bar
+It displays information and actions relating to the current screen.\
+It's used for branding, screen titles, navigation, and actions.\
+It can transform into a contextual action bar or be used as a navbar.
+
+* docs: https://mui.com/material-ui/react-app-bar/
+* code:
+
+
+### Drawer
+
+The navigation drawers (or "sidebars") provide ergonomic access to destinations in a site or app functionality such as switching accounts.
+A navigation drawer can either be permanently on-screen or controlled by a navigation menu icon.
+
+* docs: https://mui.com/material-ui/react-drawer/
+* code:
+
+[Side sheets](https://m2.material.io/components/sheets-side) are supplementary surfaces primarily used on tablet and desktop.
+
+Modal side sheets are used on mobile instead of standard side sheets, due to limited screen size.
+They can display the same types of content as standard side sheets, but must be dismissed in order to interact with the underlying content.
+
+Side sheets should be placed on the opposite side of a side navigation drawer to avoid obstructing the UI or causing confusion about the sheet’s functionality.
+
+### Bottom Navigation
+
+
+
+### Breadcrumbs
+
+
+
+
+### Menu
+
+
+
+
+
 
 
 - - -
@@ -205,17 +281,7 @@ It contains foundational React UI component libraries for shipping new features 
 ### Skeleton
 
 
-- - -
 
-## NAVIGATION
-
-### Bottom Navigation
-
-### Breadcrumbs
-
-### Drawer
-
-### Menu
 
 
 - - -
