@@ -207,9 +207,25 @@ It contains foundational React UI component libraries for shipping new features 
 
 - - -
 
+## DATA GRID
+
+### 📊 Data table
+
+* docs: https://mui.com/material-ui/react-table/#data-table
+* code: `import Table from '@mui/material/Table';`
+
+### 📈 MIT version
+_It's a clean abstraction with basic features like editing, pagination, sorting and filtering single columns, and column groups._
+
+* docs: https://mui.com/x/react-data-grid/
+* code: `import { DataGrid } from '@mui/x-data-grid';`
+
+
+- - -
+
 ## NAVIGATION
 
-### App Bar
+### 📱 App Bar
 It displays information and actions relating to the current screen.\
 It's used for branding, screen titles, navigation, and actions.\
 It can transform into a contextual action bar or be used as a navbar.
@@ -218,7 +234,7 @@ It can transform into a contextual action bar or be used as a navbar.
 * code:
 
 
-### Drawer
+### 🗄️ Drawer 🚪
 
 The navigation drawers (or "sidebars") provide ergonomic access to destinations in a site or app functionality such as switching accounts.
 A navigation drawer can either be permanently on-screen or controlled by a navigation menu icon.
@@ -233,31 +249,69 @@ They can display the same types of content as standard side sheets, but must be 
 
 Side sheets should be placed on the opposite side of a side navigation drawer to avoid obstructing the UI or causing confusion about the sheet’s functionality.
 
-### Bottom Navigation
+### 🔽 Bottom Navigation
+
+* docs:
+* code: ``
 
 
+### 🍞 Breadcrumbs 🧭
 
-### Breadcrumbs
-
-
-
-
-### Menu
+* docs:
+* code: ``
 
 
+### 🍽️ Menu
 
-
-
-
+* docs:
+* code: ``
 
 - - -
 
-### Button API
+## INPUTS
+
+> A component is controlled when it's managed by its parent using props.\
+> A component is uncontrolled when it's managed by its own local state.
+
+### 🔄 Select ▼
+_This components are used for collecting user provided information from a list of options._
+
+* docs: https://mui.com/material-ui/react-select/
+* code: `import Select, { SelectChangeEvent } from '@mui/material/Select';`
+
+### 🔍 Autocomplete
+_It is a normal text input enhanced by a panel of suggested options._
+
+* docs: https://mui.com/material-ui/react-autocomplete/
+  + The value must be chosen from a predefined set of allowed values.
+* code: `import Autocomplete from '@mui/material/Autocomplete';`
+
+### 📝 Text Field
+_It lets users enter and edit text._
+
+* docs: https://mui.com/material-ui/react-text-field/
+  + They typically appear in forms and dialogs.
+* code: `import TextField from '@mui/material/TextField';`
+
+### ⭐ Rating
+_It provide insight regarding others' opinions and experiences, and can allow the user to submit a rating of their own._
+
+* docs: https://mui.com/material-ui/react-rating/
+  + It can display any float number with the value prop.
+  + You can display a label on hover to help the user pick the correct rating value.
+* code: `import Rating from '@mui/material/Rating';`
 
 
+### 🔘 Button API
+_It allows users to take actions, and make choices, with a single tap._
 
-### Typography API
+* docs: https://mui.com/material-ui/react-button/
+* code: `import Button from '@mui/material/Button';`
 
+### 📄 Typography API
+
+* docs:
+* code: ``
 
 - - -
 
@@ -265,11 +319,23 @@ Side sheets should be placed on the opposite side of a side navigation drawer to
 
 ### Avatar
 
+* docs:
+* code: ``
+
 ### Badge
+
+* docs:
+* code: ``
 
 ### Divider
 
+* docs:
+* code: ``
+
 ### Icons
+
+* docs:
+* code: ``
 
 
 - - -
@@ -278,10 +344,14 @@ Side sheets should be placed on the opposite side of a side navigation drawer to
 
 ### Dialog
 
+* docs:
+* code: ``
+
 ### Skeleton
 
 
-
+* docs:
+* code: ``
 
 
 - - -
