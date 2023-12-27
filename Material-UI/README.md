@@ -66,28 +66,65 @@ It contains foundational React UI component libraries for shipping new features 
 
 - - -
 
-### [React Templates](https://mui.com/material-ui/getting-started/templates/)
-> _&emsp; Sections of each layout are clearly defined either by comments or use of separate files, making it simple to extract parts of a page (such as a "hero unit", or footer, for example) for reuse in other pages. For multi-part examples, a table in the README at the linked source code location describes the purpose of each file._
+## MUI LAYOUT
 
-### [Learning resources](https://mui.com/material-ui/getting-started/learn/)
-> _List of some of the best third-party resources for learning how to build beautiful apps with our components._
+> _Stack is ideal for one-dimensional layouts, while Grid is preferable when you need both vertical and horizontal arrangement._
 
-* [MUI5 (Material UI) Crash Course](https://www.youtube.com/playlist?list=PLQg6GaokU5CyVrmVsYa9R3g1z2Tsmfpm-) video by Laith Academy:
-  - _everything you need to know to start building with the latest version of Material UI;_
-* [React + Material UI - From Zero to Hero](https://www.youtube.com/playlist?list=PLDxCaNaYIuUlG5ZqoQzFE27CUOoQvOqnQ) video series by The Atypical Developer:
-  - _build along with this in-depth series, from basic installation through advanced component implementation;_
-* [Next.js 11 Setup with Material UI v5](https://www.youtube.com/watch?v=IFaFFmPYyMI) by Leo Roese:
-  - _learn how to integrate Material UI into your Next.js app, using Emotion as the style engine;_
-* [MUI v5 Crash Intro to React](https://www.youtube.com/watch?v=_W3uuxDnySQ) by Anthony Sistilli:
-  - _how and why to use Material UI, plus guidance on theming and style customization;_
-* [MUI v5 Tutorial Playlist](https://www.youtube.com/playlist?list=PLlR2O33QQkfXnZMMZC0y22gLayBbB1UQd) by Nikhil Thadani (Indian Coders):
-  - _detailed playlist covering almost every component of Material UI with Create React App;_
-* [Clever Dev](https://www.youtube.com/channel/UCb6AZy0_D1y661PMZck3jOw) and [Smart Devpreneur](https://smartdevpreneur.com/category/javascript/material-ui/) by Jon M:
-  - _dozens of high-quality videos and articles digging deep into the nuts and bolts of Material UI._
+### Grid
+> _Responsive layout grid adapts to screen size and orientation, ensuring consistency across layouts._\
+> _Material Design's responsive UI is based on a 12-column grid layout._
 
-- - -
+* docs: https://mui.com/material-ui/react-grid/
+* code: `import Grid from '@mui/material/Grid';`
+  + There are two types of layout: containers and items.
+  + Item are fluid and sized relative to their parent element.
+  + Items have padding to create the spacing between individual items.
+* docs: https://mui.com/material-ui/react-grid2/
+* code: `import Grid from '@mui/material/Unstable_Grid2';`
 
-## LAYOUT
+#### Default breakpoints
+> _Each breakpoint (a key) matches with a fixed screen width (a value):_
+- **xs**, extra-small: 0px
+- **sm**, small: 600px
+-  **md**, medium: 900px
+- **lg**, large: 1200px
+- **xl**, extra-large: 1536px
+
+#### Fluid grids
++ Components may have multiple widths defined, causing the layout to change at the defined breakpoint. 
++ Width values given to larger breakpoints override those given to smaller breakpoints.
++ The rowSpacing and columnSpacing props allow for specifying the row and column gaps independently.
+
+```jsx
+  import Item from '@/views/Categories/Item';
+
+   <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Item>
+            Content occupy:
+               100%  |   50%  |   34%  | 25%
+             (12/12) | (6/12) | (4/12) | (3/12)
+           </Item>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Item>
+            Content occupy:
+               100%  |   50%  |   34%  | 25%
+             (12/12) | (6/12) | (4/12) | (3/12)
+           </Item>
+        </Grid>
+      </Grid>
+    </Box>
+```
+
+### Stack
+> _It is a container component for arranging elements vertically or horizontally._\
+> _Stack is ideal for one-dimensional layouts, while Grid is preferable when you need both vertical and horizontal arrangement._
+
+
+
+
 
 ### Container
 >  _It's the most basic layout element._\
@@ -136,27 +173,6 @@ It contains foundational React UI component libraries for shipping new features 
 
 - - -
 
-### Grid
-> _Responsive layout grid adapts to screen size and orientation, ensuring consistency across layouts._\
-> _Material Design's responsive UI is based on a 12-column grid layout._
-
-#### Default breakpoints
-> _Each breakpoint (a key) matches with a fixed screen width (a value):_
-- **xs**, extra-small: 0px
-- **sm**, small: 600px
--  **md**, medium: 900px
-- **lg**, large: 1200px
-- **xl**, extra-large: 1536px
-
-#### Fluid grids
-+ Components may have multiple widths defined, causing the layout to change at the defined breakpoint. 
-+ Width values given to larger breakpoints override those given to smaller breakpoints.
-+ The rowSpacing and columnSpacing props allow for specifying the row and column gaps independently.
-
-
-### Stack
-> _It is a container component for arranging elements vertically or horizontally._\
-> _Stack is ideal for one-dimensional layouts, while Grid is preferable when you need both vertical and horizontal arrangement._
 
 - - -
 
@@ -202,3 +218,25 @@ It contains foundational React UI component libraries for shipping new features 
 ### Menu
 
 
+- - -
+
+### [React Templates](https://mui.com/material-ui/getting-started/templates/)
+> _&emsp; Sections of each layout are clearly defined either by comments or use of separate files, making it simple to extract parts of a page (such as a "hero unit", or footer, for example) for reuse in other pages. For multi-part examples, a table in the README at the linked source code location describes the purpose of each file._
+
+- - -
+
+### [Some learning resources](https://mui.com/material-ui/getting-started/learn/)
+> _List of some of the best third-party resources for learning how to build beautiful apps with our components._
+
+* [MUI5 (Material UI) Crash Course](https://www.youtube.com/playlist?list=PLQg6GaokU5CyVrmVsYa9R3g1z2Tsmfpm-) video by Laith Academy:
+  - _everything you need to know to start building with the latest version of Material UI;_
+* [React + Material UI - From Zero to Hero](https://www.youtube.com/playlist?list=PLDxCaNaYIuUlG5ZqoQzFE27CUOoQvOqnQ) video series by The Atypical Developer:
+  - _build along with this in-depth series, from basic installation through advanced component implementation;_
+* [Next.js 11 Setup with Material UI v5](https://www.youtube.com/watch?v=IFaFFmPYyMI) by Leo Roese:
+  - _learn how to integrate Material UI into your Next.js app, using Emotion as the style engine;_
+* [MUI v5 Crash Intro to React](https://www.youtube.com/watch?v=_W3uuxDnySQ) by Anthony Sistilli:
+  - _how and why to use Material UI, plus guidance on theming and style customization;_
+* [MUI v5 Tutorial Playlist](https://www.youtube.com/playlist?list=PLlR2O33QQkfXnZMMZC0y22gLayBbB1UQd) by Nikhil Thadani (Indian Coders):
+  - _detailed playlist covering almost every component of Material UI with Create React App;_
+* [Clever Dev](https://www.youtube.com/channel/UCb6AZy0_D1y661PMZck3jOw) and [Smart Devpreneur](https://smartdevpreneur.com/category/javascript/material-ui/) by Jon M:
+  - _dozens of high-quality videos and articles digging deep into the nuts and bolts of Material UI._
