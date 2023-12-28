@@ -275,10 +275,16 @@ _This component enables the user to select a specific page from a range of pages
 
 - - -
 
-## INPUTS
+## 🔢 INPUTS
 
 > A component is controlled when it's managed by its parent using props.\
 > A component is uncontrolled when it's managed by its own local state.
+
+### 📋 FormControl ❌
+_Provides context such as filled/focused/error/required for form inputs._
+
+* docs: https://mui.com/material-ui/api/form-control/
+* code: `import FormControl from '@mui/material/FormControl';`
 
 ### 🔄 Select ▼
 _This components are used for collecting user provided information from a list of options._
@@ -320,9 +326,14 @@ _It allows users to take actions, and make choices, with a single tap._
 * code: `import Button from '@mui/material/Button';`
 
 ### 📄 Typography API
+_Use it to present your design and content as clearly and efficiently as possible._
 
-* docs:
-* code: ``
+* docs: https://mui.com/material-ui/react-typography/
+  + variant="h1 | h2 | h3 | h4 | h5 | h6"
+  + variant="subtitle1 | subtitle2"
+  + variant="body1 | body2"
+  + variant="button | caption | overline"
+* code: `import Typography from '@mui/material/Typography';`
 
 - - -
 
@@ -330,18 +341,33 @@ _It allows users to take actions, and make choices, with a single tap._
 
 ### 👤 Avatar
 
-* docs:
-* code: ``
+* docs: https://mui.com/material-ui/react-avatar/
+  + Image, Letter, Icon
+* code: `import Avatar from '@mui/material/Avatar';`
 
 ### 🏅 Badge
+_It generates a small badge to the top-right of its child(ren)._
 
-* docs:
-* code: ``
+* docs: https://mui.com/material-ui/react-badge/
+* code: `import Badge from '@mui/material/Badge';`
 
 ### ⚙️ Icons
 
-* docs:
-* code: ``
+* docs: https://mui.com/material-ui/icons/
+* docs: https://mui.com/material-ui/material-icons/
+
+```jsx
+  import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+  import AccessTimeIcon from '@mui/icons-material/AccessTime';
+  import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+  import AttachFileIcon from '@mui/icons-material/AttachFile';
+  import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+  import ClearIcon from '@mui/icons-material/Clear';
+  import DeleteIcon from '@mui/icons-material/Delete';
+  import EditIcon from '@mui/icons-material/Edit';
+  import HomeIcon from '@mui/icons-material/Home';
+  import SaveIcon from '@mui/icons-material/Save';
+```
 
 ### 🚧 Divider
 _It separates content into clear groups._
@@ -358,15 +384,29 @@ _It separates content into clear groups._
 ## FEEDBACK
 
 ### 💬 Dialog
+_It informs users about a task and can contain critical information, require decisions, or involve multiple tasks._
 
-* docs:
-* code: ``
+* docs: https://mui.com/material-ui/react-dialog/
+  + Type of modal window that appears in front of app content to provide critical information or ask for a decision.
+  + It disables all app functionality when they appear.
+* code: `import Dialog from '@mui/material/Dialog';`
 
 ### 💀 Skeleton
+_Display a placeholder preview of your content before the data gets loaded to reduce load-time frustration._
 
+* docs: https://mui.com/material-ui/react-skeleton/
+  + It feels like things are happening immediately, then the information is incrementally displayed on the screen.
+  + variant="text | circular | rectangular | rounded"
+* code: `import Skeleton from '@mui/material/Skeleton';`
 
-* docs:
-* code: ``
+> Avoid The Spinner!
+
+- - -
+
+## MUI System Properties
+
+* docs: https://mui.com/system/properties/
+
 
 
 - - -
