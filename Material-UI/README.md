@@ -231,7 +231,7 @@ It's used for branding, screen titles, navigation, and actions.\
 It can transform into a contextual action bar or be used as a navbar.
 
 * docs: https://mui.com/material-ui/react-app-bar/
-* code:
+* code: `import AppBar from '@mui/material/AppBar';`
 
 
 ### 🗄️ Drawer 🚪
@@ -240,7 +240,7 @@ The navigation drawers (or "sidebars") provide ergonomic access to destinations 
 A navigation drawer can either be permanently on-screen or controlled by a navigation menu icon.
 
 * docs: https://mui.com/material-ui/react-drawer/
-* code:
+* code: `import Drawer from '@mui/material/Drawer';`
 
 [Side sheets](https://m2.material.io/components/sheets-side) are supplementary surfaces primarily used on tablet and desktop.
 
@@ -250,21 +250,28 @@ They can display the same types of content as standard side sheets, but must be 
 Side sheets should be placed on the opposite side of a side navigation drawer to avoid obstructing the UI or causing confusion about the sheet’s functionality.
 
 ### 🔽 Bottom Navigation
+_This bar allows movement between primary destinations in an app._
 
-* docs:
-* code: ``
-
+* docs: https://mui.com/material-ui/react-bottom-navigation/
+  + require: `import {NextLinkComposed} from '@/NextMuiLink';`
+* code: `import BottomNavigation from '@mui/material/BottomNavigation';`
 
 ### 🍞 Breadcrumbs 🧭
+_It is a list of links that help visualize a page's location within a site's hierarchical structure, it allows navigation up to any of the ancestors._
 
-* docs:
-* code: ``
-
+* docs: https://mui.com/material-ui/react-breadcrumbs/
+* code: `import Breadcrumbs from '@mui/material/Breadcrumbs';`
 
 ### 🍽️ Menu
 
 * docs:
 * code: ``
+
+### 📄 Pagination
+_This component enables the user to select a specific page from a range of pages._
+
+* docs: https://mui.com/material-ui/react-pagination/
+* code: `import Pagination from '@mui/material/Pagination';`
 
 - - -
 
@@ -293,6 +300,10 @@ _It lets users enter and edit text._
   + They typically appear in forms and dialogs.
 * code: `import TextField from '@mui/material/TextField';`
 
+- - -
+
+## CUSNOMIZATION
+
 ### ⭐ Rating
 _It provide insight regarding others' opinions and experiences, and can allow the user to submit a rating of their own._
 
@@ -317,37 +328,41 @@ _It allows users to take actions, and make choices, with a single tap._
 
 ## DATA DISPLAY
 
-### Avatar
+### 👤 Avatar
 
 * docs:
 * code: ``
 
-### Badge
+### 🏅 Badge
 
 * docs:
 * code: ``
 
-### Divider
+### ⚙️ Icons
 
 * docs:
 * code: ``
 
-### Icons
+### 🚧 Divider
+_It separates content into clear groups._
 
-* docs:
-* code: ``
+* docs: https://mui.com/material-ui/react-divider/
+* code: `import Divider from '@mui/material/Divider';`
 
+```jsx
+  <Divider>CENTER</Divider>
+```
 
 - - -
 
 ## FEEDBACK
 
-### Dialog
+### 💬 Dialog
 
 * docs:
 * code: ``
 
-### Skeleton
+### 💀 Skeleton
 
 
 * docs:
