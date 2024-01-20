@@ -119,17 +119,28 @@ It is a shortcut for defining custom styles that has access to the `theme`.
         height: '50%' | '100%'
       }}>
     ```
-+ **B**
++ **Spacing**
+
+| `{property}` |    CSS   | . |  `{sides}`   |   CSS    | . |  `{sides}`   |      CSS        |
+|--------------|----------|---|--------------|----------|---|--------------|-----------------|
+| <kbd>m</kbd> | _margin_ | . | <kbd>t</kbd> |  _top_   | . | <kbd>y</kbd> |  _top & bottom_ |
+|              |          | . | <kbd>b</kbd> | _bottom_ | . |              |                 |
+| <kbd>p</kbd> | _padding_| . | <kbd>l</kbd> |  _left_  | . | <kbd>x</kbd> |  _left & right_ |
+|              |          | . | <kbd>r</kbd> | _right_  | . |              |  _all 4 sides_  |
+
+Horizontal centering: ``<Box sx={{ mx: 'auto', width: 200 }}>``
+
++ **Typography**
   + ```typescript
-
+      <Box sx={{
+        textAlign: 'left' | 'center' | 'right',
+        textTransform: 'capitalize' | 'lowercase' | 'uppercase',
+        fontWeight: 'light' | 'regular' | 'medium' | 'bold',
+        fontStyle: 'normal' | 'italic' | 'oblique',
+        fontFamily: 'default' | 'Monospace',
+        letterSpacing: 3 | 6 | 9,
+      }}>
     ```
-+ **B**
-  + ```typescript
-
-    ```
-
-
-
 
 ### Superset of CSS
 The `sx` prop supports CSS syntax including child and pseudo-selectors, media queries, raw CSS values, and more. 
