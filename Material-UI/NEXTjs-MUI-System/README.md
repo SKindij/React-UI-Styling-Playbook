@@ -3,6 +3,14 @@
 
 
 
+
+
+
+
+
+
+- - -
+
 ## [MUI System](https://mui.com/system/getting-started/)
 MUI System's core utility is the `sx` prop, which gives you a quick and efficient way to apply the correct design tokens directly to a React element.
 This prop provides a superset of **CSS** (i.e. it contains all CSS properties and selectors in addition to custom ones) that maps values directly from the `theme`, depending on the CSS property used. 
@@ -49,10 +57,78 @@ It is a shortcut for defining custom styles that has access to the `theme`.
       }}>…
 
     ```
++ **Positions**
+  + ```typescript
+      import * as React from 'react';
+      import Typography from '@mui/material/Typography';
+      import Box from '@mui/material/Box';
+
+      export default function ZIndex() {
+        return (
+          <Typography
+            component="div" variant="body1"
+            style={{
+             height: 100, width: '100%',
+              position: 'relative',
+            }}
+          >
+            <Box
+              sx={{
+                bgcolor: (theme) => theme.palette.mode === 'dark' ? '#101010' : 'grey.600',
+                color: (theme) => (theme.palette.mode === 'dark' ? 'grey.300' : 'grey.50'),
+                border: '1px solid', borderRadius: 2,
+                borderColor: (theme) => theme.palette.mode === 'dark' ? 'grey.800' : 'grey.300',
+                p: 2, fontSize: '0.875rem', fontWeight: '700',
+                position: 'absolute',
+                top: 40, left: '40%',
+                zIndex: 'tooltip',
+              }}
+            >
+              z-index tooltip
+            </Box>
+            <Box
+              sx={{
+                bgcolor: (theme) => (theme.palette.mode === 'dark' ? 'grey.800' : '#fff'),
+                color: (theme) => theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800',
+                border: '1px solid', borderRadius: 2,
+                borderColor: (theme) => theme.palette.mode === 'dark' ? 'grey.800' : 'grey.300',
+                p: 2, fontSize: '0.875rem', fontWeight: '700',
+                position: 'absolute',
+                top: 0, left: '43%',
+                zIndex: 'modal',
+              }}
+            >
+              z-index modal
+            </Box>
+          </Typography>
+        );
+      }
+    ```
++ **Shadows**
+  + ```typescript
+      <Box sx={{ boxShadow: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 }}>…
+    ```
++ **Sizing**
+  + ```typescript
+      <Box sx={{
+        width: 1/4 | '25%',
+        width: 300 | 500, // converted to pixel
+        width: 1 | '100%' | 'auto',
+        // setting a constraint on breakpoints
+        maxWidth: 'sm' | 'md' | 'lg',
+        height: '50%' | '100%'
+      }}>
+    ```
 + **B**
   + ```typescript
 
     ```
++ **B**
+  + ```typescript
+
+    ```
+
+
 
 
 ### Superset of CSS
@@ -86,25 +162,3 @@ Here are a few examples of how you can implement these CSS features:
           },
       }} >
     ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
