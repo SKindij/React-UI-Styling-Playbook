@@ -408,26 +408,8 @@ _Display a placeholder preview of your content before the data gets loaded to re
 * docs: https://mui.com/system/properties/
 
 
-
-- - -
-
 ### [React Templates](https://mui.com/material-ui/getting-started/templates/)
 > _&emsp; Sections of each layout are clearly defined either by comments or use of separate files, making it simple to extract parts of a page (such as a "hero unit", or footer, for example) for reuse in other pages. For multi-part examples, a table in the README at the linked source code location describes the purpose of each file._
 
 - - -
 
-### [Some learning resources](https://mui.com/material-ui/getting-started/learn/)
-> _List of some of the best third-party resources for learning how to build beautiful apps with our components._
-
-* [MUI5 (Material UI) Crash Course](https://www.youtube.com/playlist?list=PLQg6GaokU5CyVrmVsYa9R3g1z2Tsmfpm-) video by Laith Academy:
-  - _everything you need to know to start building with the latest version of Material UI;_
-* [React + Material UI - From Zero to Hero](https://www.youtube.com/playlist?list=PLDxCaNaYIuUlG5ZqoQzFE27CUOoQvOqnQ) video series by The Atypical Developer:
-  - _build along with this in-depth series, from basic installation through advanced component implementation;_
-* [Next.js 11 Setup with Material UI v5](https://www.youtube.com/watch?v=IFaFFmPYyMI) by Leo Roese:
-  - _learn how to integrate Material UI into your Next.js app, using Emotion as the style engine;_
-* [MUI v5 Crash Intro to React](https://www.youtube.com/watch?v=_W3uuxDnySQ) by Anthony Sistilli:
-  - _how and why to use Material UI, plus guidance on theming and style customization;_
-* [MUI v5 Tutorial Playlist](https://www.youtube.com/playlist?list=PLlR2O33QQkfXnZMMZC0y22gLayBbB1UQd) by Nikhil Thadani (Indian Coders):
-  - _detailed playlist covering almost every component of Material UI with Create React App;_
-* [Clever Dev](https://www.youtube.com/channel/UCb6AZy0_D1y661PMZck3jOw) and [Smart Devpreneur](https://smartdevpreneur.com/category/javascript/material-ui/) by Jon M:
-  - _dozens of high-quality videos and articles digging deep into the nuts and bolts of Material UI._
