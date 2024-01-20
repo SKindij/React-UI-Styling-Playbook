@@ -1,13 +1,38 @@
 # NEXTjs & Material UI
+_Next.js allows you to pre-render every page of your web app. 
+As a consequence, Next.js will generate HTML in advance on the server side, instead of making JavaScript do all of that on the client side. 
+This behavior normally leads to improved performance and SEO._
 
+**Emotion** is a library that is used in the latest version of MUI (5) to create styles. It allows you to write CSS in JavaScript.\
+``npm install @mui/material @emotion/react @emotion/styled @emotion/cache``
 
+### Embrace the Theme
+The only thing left to do is add your new **ThemeRegistry** to your app’s layout so that the custom `theme` can be applied globally.
 
+> Unfortunately, to keep the Next.js server-side rendering benefit, we can’t use the `styled()` utility.
+> Thankfully, MUI also provides you with a prop called `sx`, which you can use to customize the styling of a single component. 
 
+### Handling routing with Next.js and MUI
+The `Link` component from Next.js is important as it handles all the navigation, but the `Link` component from MUI is also necessary for styling. 
+_How can you combine both?_
 
+```typescript
+  import styles from './page.module.css'
+  import Link from '@mui/material/Link';
+  import * as NextLink from 'next/link';
 
-
-
-
+  export default function Home() {
+   return (
+     <div className={styles.container}>
+       <div><span>With default Theme:</span></div>
+       {/* to navigate through the application */}
+       <Link component={NextLink} href="/about">To About page</Link>
+       {/* to switch to external Internet sources */}
+       <Link href="http://www.google.com">To google</Link>
+     </div>
+   );
+  }
+```
 
 - - -
 
