@@ -219,3 +219,19 @@ Here are a few examples of how you can implement these CSS features:
           },
       }} >
     ```
+
+- - -
+
+## Basics of a Theme Object
+It is a configuration object that determines the look and feel Material UI components. 
+It specifies the color of the components, the darkness of the surfaces, the level of shadow, the appropriate opacity of ink elements, and much more.
+
+> By default, components use the `light` theme type.
+
+
+
+
+
+
+
+
