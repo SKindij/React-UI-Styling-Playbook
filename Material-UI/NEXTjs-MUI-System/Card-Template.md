@@ -15,8 +15,9 @@ Example of a card using an image to reinforce the content.
 import Card from '@mui/material/Card';
 // an optional wrapper for the Card header
 import CardHeader from '@mui/material/CardHeader';
+import IconButton from '@mui/material/IconButton';
 import Avatar from '@mui/material/Avatar';
-import IconButton, { IconButtonProps } from '@mui/material/IconButton';
+import ThumbUpTwoToneIcon from '@mui/icons-material/ThumbUpTwoTone';
 // container for displaying background images and gradient layers
 import CardMedia from '@mui/material/CardMedia';
 // the wrapper for the Card content
@@ -36,20 +37,22 @@ export default function MediaCard() {
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-              R
+          <Avatar aria-label="award"
+            sx={{ bgcolor:'polliwog', color:'primary.main' }}
+          >
+              ZSU
           </Avatar>
         }
         action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
+          <IconButton aria-label="gratitude" size="large">
+            <ThumbUpTwoToneIcon color='primary'/>
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title="American Chevrolet"
+        subheader="September 18, 2011"
       />
       <CardMedia component="img" height="140"
-        image={Chevrolet} alt="Chevrolet"         
+        image={Chevrolet.src} alt="Chevrolet"         
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -73,16 +76,25 @@ export default function MediaCard() {
 
 Often a card allow users to interact with the entirety of its surface to trigger its main action, be it an expansion, a link to another screen or some other behavior. The action area of the card can be specified by wrapping its contents in a `CardActionArea` component.
 
-
-
-
 ## Layout with Material UI Cards
+Using React and Material UI Cards to create a simple layout is an excellent way to create an engaging blog page.
 
+```typescript
 
+const AwardsGrid = () => {
 
+  return (
+    <>
+      <div>
+        Розділ
+      </div>
+    </>
+  );
+};
 
+export default AwardsGrid;
 
-
+```
 
 
 
