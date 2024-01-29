@@ -104,7 +104,7 @@ If your image is in a container, you can use CSS to resize the image to the widt
 
 Online services for working with photos and pictures:
 * [photoroom](https://www.photoroom.com/tools)
-  + Background Remover
+  + Background Remover: https://www.remove.bg/
 * [imageresizer](https://imageresizer.com/)
   + good
 * [Simple Image Resizer](https://www.simpleimageresizer.com/)
